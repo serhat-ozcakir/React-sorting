@@ -24,14 +24,14 @@ function Articles({ upvote, articles, date }) {
               ))
             : date
             ? date.map((item) => (
-                <tr data-testid="article" key="article-index">
+                <tr data-testid="article" key="article-index1">
                   <td data-testid="article-title">{item.title}</td>
                   <td data-testid="article-upvotes">{item.upvotes}</td>
                   <td data-testid="article-date">{item.date}</td>
                 </tr>
               ))
             : articles.map((item) => (
-                <tr data-testid="article" key="article-index">
+                <tr data-testid="article" key="article-index2">
                   <td data-testid="article-title">{item.title}</td>
                   <td data-testid="article-upvotes">{item.upvotes}</td>
                   <td data-testid="article-date">{item.date}</td>

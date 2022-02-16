@@ -8,7 +8,7 @@ const title = "Sorting Articles";
 function App({ articles }) {
   const [upvote, setUpvote] = useState();
   const [date, setDate] = useState()
-  console.log(upvote);
+ 
 
 
 
@@ -17,7 +17,7 @@ function App({ articles }) {
     articles.sort((a,b) => (a.upvotes > b.upvotes) ? -1 : ((b.upvotes > a.upvotes) ? 1 : 0))
     setUpvote(articles)
 
-      console.log(upvote);
+    
     };
 
  
